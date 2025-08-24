@@ -15,6 +15,11 @@ import 'lsp/lsp.dart';
 // anti examplle
 import 'lsp/lsp_anti_example.dart';
 
+// contoh lain LSP
+import 'lsp/vehicle_lsp_example.dart';
+//anti example
+import 'lsp/vehicle_lsp_anti_example.dart';
+
 // ISP
 import 'isp/isp.dart';
 //anti example
@@ -68,6 +73,11 @@ class TaskPageScaffold extends StatelessWidget {
       // ISP anti example
       // body: IconButtonTileAnti(actions: IconOnlyActions(context)),
 
+      // contoh lain ISP
+      body: VehicleLspGood()
+      // anti example
+      // body: VehicleLspBad(),
+
       // DIP
       // body: TaskPageDip(repo: InMemoryTaskRepositoryDip())
       // body: TaskPageDip(repo: RemoteTaskRepositoryDip())
@@ -75,13 +85,12 @@ class TaskPageScaffold extends StatelessWidget {
       // body: TaskPageDipAnti()
 
       // Observe Pattern
-      body: ChangeNotifierProvider(
-        create: (_) => CounterController(),
-        child: CounterPage(),
-      )
+      // body: ChangeNotifierProvider(
+      //   create: (_) => CounterController(),
+      //   child: CounterPage(),
+      // )
       // anti example
       // body: CounterPageAnti()
-
 
       // dependency injection example
       // body: Builder(

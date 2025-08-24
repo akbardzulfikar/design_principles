@@ -28,9 +28,10 @@ class TaskList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView(
-      children: tasks
-          .map((t) => TaskItem(task: t, onToggle: () => onToggle(t.id)))
-          .toList(),
+      children:
+          tasks
+              .map((t) => TaskItem(task: t, onToggle: () => onToggle(t.id)))
+              .toList(),
     );
   }
 }

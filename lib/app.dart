@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'features/tasks/presentation/pages/task_page.dart';
-// import 'playground/srp/task_page_srp.dart';
-import 'playground/task_page_playground.dart';
+import 'playground/task_page_main.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -15,7 +14,8 @@ class MyApp extends StatelessWidget {
         colorSchemeSeed: const Color(0xFF366CF6),
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: const TaskPage(),
+      // home: const TaskPage(),
+      home: const TaskPageScaffold(),
     );
   }
 }
